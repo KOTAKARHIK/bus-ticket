@@ -6,20 +6,36 @@
     <title>Cancellation Policy</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background: linear-gradient(45deg, #081b29, #0ef);
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
 
         main {
-            max-width: 800px;
-            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 1000px;
+            width: 90%;
+            margin: 20px;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         ol {
@@ -29,27 +45,80 @@
 
         li {
             margin-bottom: 20px;
+            background: rgba(0, 114, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        li:hover {
+            background: rgba(0, 114, 255, 0.2);
+            transform: scale(1.02);
         }
 
         strong {
             font-weight: bold;
-        }
-
-        p {
-            margin: 5px 0;
+            color: #0072ff;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.3em;
         }
 
         ul {
             list-style-type: disc;
             margin-left: 20px;
         }
+
+        ul li {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        /* Additional styling for enhanced look */
+        .header {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 span {
+            display: block;
+            font-size: 0.5em;
+            font-weight: normal;
+            letter-spacing: normal;
+        }
     </style>
 </head>
 <body>
     <main>
-        <h1><center>Cancellation Policy</center></h1>
+        <div class="header">
+            <h1>Cancellation Policy</h1>
+        </div>
         <ol>
             <li>
+                <div class="step-number">1</div>
                 <strong>Cancellation charges:</strong>
                 <ul>
                     <li>Cancellation charges will be applicable based on the time of cancellation and the type of ticket purchased.</li>
@@ -57,6 +126,7 @@
                 </ul>
             </li>
             <li>
+                <div class="step-number">2</div>
                 <strong>Cancellation Timeframe:</strong>
                 <ul>
                     <li>Cancellation requests made before a certain period before the departure time will incur nominal cancellation charges.</li>
@@ -65,6 +135,7 @@
                 </ul>
             </li>
             <li>
+                <div class="step-number">3</div>
                 <strong>Refund Policy:</strong>
                 <ul>
                     <li>Refunds, if applicable, will be processed within a specified period from the date of cancellation.</li>
@@ -73,6 +144,7 @@
                 </ul>
             </li>
             <li>
+                <div class="step-number">4</div>
                 <strong>No-Show Policy:</strong>
                 <ul>
                     <li>Passengers who do not show up for their scheduled departure ("no-show") without prior cancellation will not be eligible for any refund.</li>
@@ -80,6 +152,7 @@
                 </ul>
             </li>
             <li>
+                <div class="step-number">5</div>
                 <strong>Change of Reservation:</strong>
                 <ul>
                     <li>Passengers may have the option to modify their reservation, subject to availability and applicable charges.</li>
@@ -87,6 +160,7 @@
                 </ul>
             </li>
             <li>
+                <div class="step-number">6</div>
                 <strong>Force Majeure Events:</strong>
                 <ul>
                     <li>In case of unforeseen circumstances such as natural disasters, strikes, or government regulations, the company reserves the right to cancel or reschedule services without prior notice.</li>
@@ -94,6 +168,7 @@
                 </ul>
             </li>
             <li>
+                <div class="step-number">7</div>
                 <strong>Special Circumstances:</strong>
                 <ul>
                     <li>Special cancellation policies may apply during peak seasons, festivals, or special events.</li>
@@ -101,6 +176,7 @@
                 </ul>
             </li>
         </ol>
+        <footer>&copy; 2024 GoBus! All Rights Reserved.</footer>
     </main>
 </body>
 </html>
