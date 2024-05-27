@@ -6,20 +6,36 @@
     <title>Booking Procedure</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background: linear-gradient(45deg, #081b29, #0ef);
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
 
         main {
-            max-width: 800px;
-            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 1000px;
+            width: 90%;
+            margin: 20px;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         ol {
@@ -29,65 +45,123 @@
 
         li {
             margin-bottom: 20px;
+            background: rgba(0, 114, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        li:hover {
+            background: rgba(0, 114, 255, 0.2);
+            transform: scale(1.02);
         }
 
         strong {
             font-weight: bold;
-        }
-
-        p {
-            margin: 5px 0;
+            color: #0072ff;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.3em;
         }
 
         ul {
             list-style-type: disc;
             margin-left: 20px;
         }
+
+        ul li {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 span {
+            display: block;
+            font-size: 0.5em;
+            font-weight: normal;
+            letter-spacing: normal;
+        }
     </style>
 </head>
 <body>
     <main>
-        <h1><center>Booking Procedure</center></h1>
+        <div class="header">
+            <h1>Booking Procedure<span>Follow these simple steps to book your tickets</span></h1>
+        </div>
         <ol>
             <li>
+                <span class="step-number">1</span>
                 <strong>Visit the website or App:</strong>
                 <ul>
                     <li>Users visit the website or open the mobile app of GoBus!</li>
                 </ul>
             </li>
             <li>
+                <span class="step-number">2</span>
                 <strong>Selection of Routes:</strong>
                 <ul>
-                    <li>Users Select their departure city, destination city, and date of travel to search for available routes.</li>
+                    <li>Users select their departure city, destination city, and date of travel to search for available routes.</li>
                 </ul>
             </li>
             <li>
+                <span class="step-number">3</span>
                 <strong>Select Route:</strong>
                 <ul>
-                    <li>From the search results, users select their preferred route</li>
+                    <li>From the search results, users select their preferred route.</li>
                 </ul>
             </li>
             <li>
+                <span class="step-number">4</span>
                 <strong>Choose Seats:</strong>
                 <ul>
                     <li>Users are presented with available seats on the selected bus for the chosen route and date.</li>
-                    <li>They can choose their preferred seats based on availability</li>
+                    <li>They can choose their preferred seats based on availability.</li>
                 </ul>
             </li>
             <li>
+                <span class="step-number">5</span>
                 <strong>Enter Passenger Details:</strong>
                 <ul>
                     <li>Users enter details such as the number of passengers, their names, ages, and any special requirements.</li>
-                    <li>They also provide contact information for communication and confirmation purposes</li>
+                    <li>They also provide contact information for communication and confirmation purposes.</li>
                 </ul>
             </li>
             <li>
+                <span class="step-number">6</span>
                 <strong>Select Fare Type:</strong>
                 <ul>
                     <li>Users select the fare type based on their eligibility (regular, student, senior citizen, etc.).</li>
                 </ul>
             </li>
             <li>
+                <span class="step-number">7</span>
                 <strong>Review and Confirm:</strong>
                 <ul>
                     <li>Users review their booking details, including route, date, seat selection, passenger information, and fare type.</li>
@@ -95,27 +169,31 @@
                 </ul>
             </li>
             <li>
+                <span class="step-number">8</span>
                 <strong>Make Payment:</strong>
                 <ul>
-                    <li>Users proceed to the payment gateway to make payment for the booked tickets</li>
+                    <li>Users proceed to the payment gateway to make payment for the booked tickets.</li>
                     <li>They choose their preferred payment method (credit/debit card, net banking, digital wallets, etc.).</li>
                 </ul>
             </li>
             <li>
-                <strong>Recieve Confirmation:</strong>
+                <span class="step-number">9</span>
+                <strong>Receive Confirmation:</strong>
                 <ul>
                     <li>Once the payment is successful, users receive a booking confirmation along with a booking reference number.</li>
-                    <li>Confirmation details are sent via email and/or SMS to the provided contact information</li>
+                    <li>Confirmation details are sent via email and/or SMS to the provided contact information.</li>
                 </ul>
             </li>
             <li>
+                <span class="step-number">10</span>
                 <strong>Retrieve Tickets:</strong>
                 <ul>
                     <li>Users can either print their tickets from the website/app or opt for e-tickets/mobile tickets.</li>
-                    <li>E-tickets are sent to the registered email address and can be downloaded and displayed on mobile devices for boarding</li>
+                    <li>E-tickets are sent to the registered email address and can be downloaded and displayed on mobile devices for boarding.</li>
                 </ul>
             </li>
             <li>
+                <span class="step-number">11</span>
                 <strong>Boarding:</strong>
                 <ul>
                     <li>On the day of travel, users arrive at the boarding point well in advance.</li>
@@ -123,9 +201,10 @@
                 </ul>
             </li>
             <li>
-                <strong>Travel, Feedback and Support:</strong>
+                <span class="step-number">12</span>
+                <strong>Travel, Feedback, and Support:</strong>
                 <ul>
-                    <li>Users enjoy their journey, and GoBus! ensures a smooth travel experience</li>
+                    <li>Users enjoy their journey, and GoBus! ensures a smooth travel experience.</li>
                     <li>After the journey, users may provide feedback on their experience through the website/app.</li>
                     <li>GoBus! offers customer support for any queries or assistance during and after the journey.</li>
                 </ul>
