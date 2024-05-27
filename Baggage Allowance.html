@@ -6,20 +6,36 @@
     <title>Cancellation Policy</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background: linear-gradient(45deg, #081b29, #0ef);
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
 
         main {
-            max-width: 800px;
-            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 1000px;
+            width: 90%;
+            margin: 20px;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         ol {
@@ -29,87 +45,148 @@
 
         li {
             margin-bottom: 20px;
+            background: rgba(0, 114, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        li:hover {
+            background: rgba(0, 114, 255, 0.2);
+            transform: scale(1.02);
         }
 
         strong {
             font-weight: bold;
-        }
-
-        p {
-            margin: 5px 0;
+            color: #0072ff;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.3em;
         }
 
         ul {
             list-style-type: disc;
             margin-left: 20px;
         }
+
+        ul li {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 0.9em;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 span {
+            display: block;
+            font-size: 0.5em;
+            font-weight: normal;
+            letter-spacing: normal;
+        }
     </style>
 </head>
 <body>
     <main>
-        <h1><center>Baggage Allowance Guidelines</center></h1>
+        <div class="header">
+            <h1>Baggage Allowance Guidelines</h1>
+        </div>
         <ol>
             <li>
+                <div class="step-number">1</div>
                 <strong>Baggage Limit:</strong>
                 <ul>
-                    <li> Each passenger is allowed to carry a certain amount of baggage free of charge. This limit is typically specified in terms of weight or number of bags.</li>
+                    <li>Each passenger is allowed to carry a certain amount of baggage free of charge. This limit is typically specified in terms of weight or number of bags.</li>
                 </ul>
             </li>
             <li>
+                <div class="step-number">2</div>
                 <strong>Standard Allowance:</strong>
                 <ul>
                     <li>Passengers are usually allowed to carry one or two pieces of luggage, with each piece not exceeding a certain weight limit, such as 20 kilograms per bag.</li>
                 </ul>
             </li>
             <li>
+                <div class="step-number">3</div>
                 <strong>Excess Baggage:</strong>
                 <ul>
                     <li>If a passenger exceeds the standard baggage allowance, they may be required to pay an excess baggage fee. This fee is calculated based on the weight or size of the additional baggage.</li>
                 </ul>
             </li>
             <li>
+                <div class="step-number">4</div>
                 <strong>Oversized Items:</strong>
                 <ul>
-                    <li>Items such as bicycles, surfboards, or musical instruments that exceed standard baggage dimensions may require special handling and may incur additional charges</li>
+                    <li>Items such as bicycles, surfboards, or musical instruments that exceed standard baggage dimensions may require special handling and may incur additional charges.</li>
                 </ul>
             </li>
             <li>
+                <div class="step-number">5</div>
                 <strong>Restricted Items:</strong>
                 <ul>
                     <li>Certain items are not permitted on board due to safety or regulatory reasons. Passengers should check the list of prohibited items before packing their luggage.</li>
                 </ul>
             </li>
             <li>
+                <div class="step-number">6</div>
                 <strong>Valuables and Fragile Items:</strong>
                 <ul>
-                    <li> Passengers are advised to carry valuables, fragile items, and essential medications in their carry-on luggage to ensure their safety and accessibility during the journey.</li>
+                    <li>Passengers are advised to carry valuables, fragile items, and essential medications in their carry-on luggage to ensure their safety and accessibility during the journey.</li>
                 </ul>
             </li>
             <li>
+                <div class="step-number">7</div>
                 <strong>Lost or Damaged Baggage:</strong>
                 <ul>
                     <li>GoBus! has a policy in place for handling lost or damaged baggage, including procedures for reporting incidents and filing claims for compensation.</li>
                 </ul>
             </li>
             <li>
+                <div class="step-number">8</div>
                 <strong>Special Requirements:</strong>
                 <ul>
-                    <li> Passengers with special needs, such as medical equipment or mobility aids, should inform the bus company in advance to ensure appropriate arrangements can be made.</li>
+                    <li>Passengers with special needs, such as medical equipment or mobility aids, should inform the bus company in advance to ensure appropriate arrangements can be made.</li>
                 </ul>
             </li>
             <li>
+                <div class="step-number">9</div>
                 <strong>Liability:</strong>
                 <ul>
                     <li>The bus company may have limitations on liability for lost, damaged, or delayed baggage. Passengers should review the company's terms and conditions regarding baggage liability.</li>
                 </ul>
             </li>
             <li>
+                <div class="step-number">10</div>
                 <strong>Additional Services:</strong>
                 <ul>
-                    <li>Some bus companies may offer optional services such as baggage insurance or luggage delivery to provide passengers with added convenience and peace of mind</li>
+                    <li>Some bus companies may offer optional services such as baggage insurance or luggage delivery to provide passengers with added convenience and peace of mind.</li>
                 </ul>
             </li>
         </ol>
+        <footer>&copy; 2024 GoBus! All Rights Reserved.</footer>
     </main>
 </body>
 </html>
