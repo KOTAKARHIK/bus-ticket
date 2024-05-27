@@ -1,26 +1,54 @@
-7. BOARDING AND DEPARTURE GUIDELINES:
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancellation Policy</title>
+    <title>Boarding and Departure</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background: linear-gradient(45deg, #081b29, #0ef);
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
         }
 
         main {
-            max-width: 800px;
-            margin: 20px auto;
+            background: #fff;
+            max-width: 1000px;
+            width: 90%;
+            margin: 20px;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         ol {
@@ -30,27 +58,56 @@
 
         li {
             margin-bottom: 20px;
+            background: rgba(0, 114, 255, 0.1);;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        li:hover {
+            background: rgba(0, 114, 255, 0.2);
+            transform: scale(1.02);
         }
 
         strong {
             font-weight: bold;
-        }
-
-        p {
-            margin: 5px 0;
+            color: #5f27cd;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.3em;
         }
 
         ul {
             list-style-type: disc;
             margin-left: 20px;
         }
+
+        ul li {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
     <main>
-        <h1><center>Boarding and Departure</center></h1>
+        <h1>Boarding and Departure</h1>
         <ol>
             <li>
+                <span class="step-number">1</span>
                 <strong>Arrival Time:</strong>
                 <ul>
                     <li>Passengers should arrive at the boarding point at least 30 minutes before the scheduled departure time.</li>
@@ -58,6 +115,7 @@
                 </ul>
             </li>
             <li>
+                <span class="step-number">2</span>
                 <strong>Ticket Verification:</strong>
                 <ul>
                     <li>Passengers must present their tickets (printed or electronic) along with valid identification at the boarding point.</li>
@@ -65,6 +123,7 @@
                 </ul>
             </li>
             <li>
+                <span class="step-number">3</span>
                 <strong>Luggage Handling:</strong>
                 <ul>
                     <li>Passengers are responsible for their luggage.</li>
@@ -73,6 +132,7 @@
                 </ul>
             </li>
             <li>
+                <span class="step-number">4</span>
                 <strong>Boarding Process:</strong>
                 <ul>
                     <li>Passengers board the bus in an orderly manner, following the instructions of the bus staff.</li>
@@ -80,13 +140,15 @@
                 </ul>
             </li>
             <li>
+                <span class="step-number">5</span>
                 <strong>Seating Arrangements:</strong>
                 <ul>
                     <li>Passengers occupy their assigned seats as indicated on their tickets.</li>
-                    <li>Seats are allocated based on the booking preferences and availability at the time of reservation</li>
+                    <li>Seats are allocated based on the booking preferences and availability at the time of reservation.</li>
                 </ul>
             </li>
             <li>
+                <span class="step-number">6</span>
                 <strong>Safety Protocols:</strong>
                 <ul>
                     <li>Passengers must adhere to safety protocols and guidelines specified by the bus company.</li>
@@ -94,6 +156,7 @@
                 </ul>
             </li>
             <li>
+                <span class="step-number">7</span>
                 <strong>Departure Time:</strong>
                 <ul>
                     <li>The bus departs at the scheduled departure time, regardless of whether all passengers have boarded.</li>
@@ -101,20 +164,15 @@
                 </ul>
             </li>
             <li>
+                <span class="step-number">8</span>
                 <strong>Communication Channels:</strong>
                 <ul>
                     <li>The bus company provides clear communication channels for passengers to inquire about boarding procedures, departure times, and any other concerns.</li>
-                    <li>Contact information for customer support or emergency assistance is made available to passengers</li>
+                    <li>Contact information for customer support or emergency assistance is made available to passengers.</li>
                 </ul>
             </li>
             <li>
-                <strong>Communication Channels:</strong>
-                <ul>
-                    <li>The bus company provides clear communication channels for passengers to inquire about boarding procedures, departure times, and any other concerns.</li>
-                    <li>Contact information for customer support or emergency assistance is made available to passengers</li>
-                </ul>
-            </li> 
-            <li>
+                <span class="step-number">9</span>
                 <strong>Onboard Amenities:</strong>
                 <ul>
                     <li>Passengers can enjoy onboard amenities such as comfortable seating, air conditioning/heating, Wi-Fi, and entertainment systems (if available).</li>
@@ -122,6 +180,7 @@
                 </ul>
             </li>
             <li>
+                <span class="step-number">10</span>
                 <strong>Arrival at Destination:</strong>
                 <ul>
                     <li>Passengers disembark the bus upon arrival at their destination.</li>
